@@ -1,0 +1,269 @@
+.Body {
+  background-color: rgb(0, 1, 20);
+  color: white;
+}
+
+.Body .BodyContainer {
+  text-align: center;
+}
+
+.Body .BodyContainer .image img {
+  width: 100%;
+  height: 45em;
+  object-fit: cover;
+}
+
+h2 {
+  color: white;
+  margin-top: 0.5em;
+}
+
+.movieGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.movieItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+}
+
+.movieItem img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.movieItem:hover img {
+  transform: scale(1.15);
+  filter: brightness(80%);
+}
+
+.movieItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.movieDetails {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 27, 0.9), rgba(0, 0, 27, 0.9));
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.4s ease;
+}
+
+.movieDetails:hover {
+  background: linear-gradient(to top, rgba(0, 0, 43, 0.8), rgba(0, 0, 60, 0.4));
+}
+
+.movieDetails h3 {
+  margin: 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.movieDetails p {
+  margin: 5px 0;
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+.buyButtonContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 50, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.movieItem:hover .buyButtonContainer {
+  opacity: 1;
+}
+
+.buyButton {
+  padding: 12px 30px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+.buyButton:hover {
+  background-color: #e63b00;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.cinemaDetailsSection {
+  margin-top: 70px;
+  padding: 40px 20px;
+  color: white;
+}
+
+.cinemaRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;  
+}
+
+.cinemaDescriptionLeft,
+.cinemaDescriptionRight {
+  flex: 1;
+  padding: 30px; 
+}
+
+.cinemaDescriptionLeft h3,
+.cinemaDescriptionRight h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.cinemaDescriptionLeft p,
+.cinemaDescriptionRight p {
+  font-size: 1.2em;
+  line-height: 1.8;  
+  color: #ddd;
+}
+
+.cinemaImageRight,
+.cinemaImageLeft {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cinemaImageRight img,
+.cinemaImageLeft img {
+  width: 100%;
+  max-width: 500px; 
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);  
+}
+
+.cinemaImageRight {
+  margin-left: 30px;
+}
+
+.cinemaImageLeft {
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .cinemaRow {
+    flex-direction: column;
+  }
+
+  .cinemaImageRight,
+  .cinemaImageLeft {
+    margin: 20px 0;
+  }
+}
+
+
+.footer {
+  background-color: rgb(0, 1, 20);
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1;
+  margin: 20px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-social h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.footer-about p {
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 1.1em;
+}
+
+.footer-links ul li a:hover {
+  color: #1e90ff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons li a {
+  font-size: 1.8em;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.social-icons li a:hover {
+  color: #1e90ff;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 1em;
+  color: #aaa;
+}

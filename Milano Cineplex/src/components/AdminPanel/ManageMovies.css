@@ -1,0 +1,142 @@
+.manage-movies {
+    padding: 20px;
+    background-color: #25233a;
+    color: white;
+  }
+  
+  .manage-movies h3 {
+    font-size: 20px; 
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .manage-movies-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    font-size: 12px; 
+  }
+  
+  .manage-movies-table th,
+  .manage-movies-table td {
+    border: 1px solid #333333;
+    padding: 8px 10px; 
+    text-align: center;
+  }
+  
+  .manage-movies-table th {
+    background-color: #231e31;
+    color: #ccc;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .manage-movies-table td {
+    background-color: #1b1929;
+    color: white;
+  }
+  
+  .manage-movies-table tr:nth-child(even) {
+    background-color: #151515;
+  }
+  
+  .manage-movies-table input[type="text"],
+  .manage-movies-table input[type="date"] {
+    background-color: #262626;
+    border: 1px solid #555;
+    padding: 4px;
+    border-radius: 4px;
+    color: white;
+    width: 100%;
+    font-size: 12px;
+  }
+  
+  button {
+    padding: 6px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px; 
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .manage-movies-table button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .manage-movies-table .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .manage-movies-table .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  .manage-movies-table .edit-btn {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .manage-movies-table .edit-btn:hover {
+    background-color: #1976D2;
+  }
+  
+  .save-btn {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background-color: #1976D2;
+  }
+  
+  .delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 8px; 
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px; 
+  }
+  
+  .delete-btn:hover {
+    background-color: darkred;
+  }
+  
+
+  .manage-movies-table td.movie-url {
+    max-width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .manage-movies-table td.movie-url:hover::after {
+    content: attr(data-url);
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    white-space: nowrap;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px; 
+    z-index: 1;
+  }
+  

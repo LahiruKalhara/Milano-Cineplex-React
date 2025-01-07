@@ -1,0 +1,81 @@
+
+.manage-reviews {
+    padding: 2em;
+    background-color: #25233a; 
+    color: #eaeaea; 
+    border-radius: 8px;
+}
+
+.manage-reviews-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+.manage-reviews-table th, .manage-reviews-table td {
+    padding: 1em;
+    border: 1px solid #444444;
+    text-align: left;
+}
+
+.manage-reviews-table thead {
+    background-color: #333;
+}
+
+.manage-reviews-table tbody tr:nth-child(even) {
+    background-color: #251c35; 
+}
+
+.manage-reviews-table tbody tr:hover {
+    background-color: #1d1a33; 
+}
+
+.manage-reviews-table th {
+    background-color: #231e31;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.manage-reviews-table td {
+    color: #eaeaea;
+}
+
+.manage-reviews-table input {
+    background-color: #2c2c2c;
+    color: #eaeaea;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.manage-reviews-table button {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.manage-reviews-table button:hover {
+    transform: scale(1.05);
+}
+
+.manage-reviews-table .edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.manage-reviews-table .edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.manage-reviews-table .delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.manage-reviews-table .delete-btn:hover {
+    background-color: #c82333;
+}
